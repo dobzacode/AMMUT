@@ -26,6 +26,8 @@ const social = [
   }
 ]
 
+
+
 export  default async function Home() {
 
   const blurImage = await dynamicBlurDataUrl("/DSC07907-2.jpg")
@@ -35,7 +37,7 @@ export  default async function Home() {
       
       <ul className="w-full flex flex-col gap-medium items-center relative z-50">
         {social.map(({name, href, path}) => {return <ListItem key={name} path={path} href={href} >{name}</ListItem>})}</ul>
-        <Image fill src={"/DSC07907-2.jpg"} placeholder='blur' blurDataURL={blurImage} alt="Ammut picture" className="object-cover object-[center_15%]"></Image>
+        <Image fill src={"/DSC07907-2.jpg"} placeholder='blur' blurDataURL={blurImage}  priority={true} alt="Ammut picture" className="object-cover object-[center_15%]"></Image>
         
           
         

@@ -4,7 +4,7 @@
 export const baseUrl =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000/'
-    : 'https://ammut.fr';
+    : 'https://ammut.fr/';
 
 export async function dynamicBlurDataUrl(url: string) {
   const base64str = await fetch(`${baseUrl}/_next/image?url=${url}&w=16&q=75`).then(async (res) =>

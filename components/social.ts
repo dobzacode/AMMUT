@@ -1,7 +1,7 @@
 import { mdiInstagram, mdiSoundcloud, mdiSpotify } from "@mdi/js"
 
 const social = [
-  { name: "Me Matt & Carl",
+  { name: "Me Matt & Carl ",
   path: "/me_matt_and_carl.jpg",
   href: "https://soundcloud.com/ammut-3000/me-matt-carl-free-download",
   isNotIcon: true,
